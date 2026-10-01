@@ -11,6 +11,8 @@ export const skills: Skill[] = [
 	{ name: 'Spring Boot', category: 'backend' },
 	{ name: 'Node.js', category: 'backend' },
 	{ name: 'Bun', category: 'backend' },
+	{ name: 'Software AG', category: 'integration' },
+	{ name: 'webMethods', category: 'integration' },
 	{ name: 'REST', category: 'integration' },
 	{ name: 'SOAP', category: 'integration' },
 	{ name: 'Third-party API', category: 'integration' },
@@ -35,7 +37,7 @@ export const stackGroups: SkillGroup[] = [
 	},
 	{
 		label: 'INTEGRATION',
-		items: ['REST', 'SOAP', 'Third-party API']
+		items: ['Software AG', 'webMethods', 'REST', 'SOAP', 'Third-party API']
 	},
 	{
 		label: 'DATA',
@@ -48,18 +50,18 @@ export const stackGroups: SkillGroup[] = [
 ];
 
 export const stackMarquee = [
+	'WEBMETHODS',
+	'SOFTWARE AG',
+	'JAVA',
+	'SPRING BOOT',
 	'SVELTE',
 	'TYPESCRIPT',
-	'JAVA',
-	'NODE',
-	'SPRING',
-	'BUN',
-	'MONGODB',
-	'ORACLE',
-	'DOCKER',
-	'LINUX',
 	'REST',
 	'SOAP',
-	'REDIS',
-	'TAILWIND'
+	'ORACLE',
+	'NODE',
+	'BUN',
+	'DOCKER',
+	'LINUX',
+	'MONGODB'
 ];

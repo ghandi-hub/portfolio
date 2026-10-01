@@ -6,8 +6,8 @@ export const experiences: Experience[] = [
 		title: 'Back End Developer',
 		company: 'PT. Bank Negara Indonesia (Persero) Tbk.',
 		description:
-			'Engineering enterprise-grade backend services, API integrations, and middleware systems. Responsible for robust message transformation, request validation, and high-reliability data exchange across core banking platforms.',
-		stack: ['Java', 'Spring Boot', 'REST', 'SOAP', 'Oracle', 'Node.js']
+			'Engineering enterprise-grade backend services, API integrations, and middleware systems using Software AG webMethods. Responsible for robust message transformation, request validation, and high-reliability data exchange across core banking platforms.',
+		stack: ['Software AG', 'webMethods', 'Java', 'Spring Boot', 'REST', 'SOAP', 'Oracle']
 	},
 	{
 		period: '2023',
@@ -34,7 +34,7 @@ export const engineeringAreas = [
 	},
 	{
 		label: 'INTEGRATION',
-		items: ['Third-party APIs', 'Message Mapping', 'Error Handling', 'Auth Flow']
+		items: ['Software AG webMethods', 'REST / SOAP Services', 'Message Transformation', 'Flow Services']
 	},
 	{
 		label: 'DATA',

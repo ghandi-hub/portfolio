@@ -4,7 +4,7 @@
 	const metrics = [
 		{ label: 'ROLE', value: 'BACK END DEVELOPER' },
 		{ label: 'ORG', value: 'PT. BANK NEGARA INDONESIA' },
-		{ label: 'STACK', value: 'JAVA · SPRING BOOT · SVELTE · TS' },
+		{ label: 'STACK', value: 'WEBMETHODS · JAVA · SPRING BOOT' },
 		{ label: 'BASE', value: 'INDONESIA' }
 	];
 </script>
