@@ -3,6 +3,7 @@ import type { Skill, SkillGroup } from './types';
 export const skills: Skill[] = [
 	{ name: 'Svelte', category: 'frontend' },
 	{ name: 'SvelteKit', category: 'frontend' },
+	{ name: 'React', category: 'frontend' },
 	{ name: 'TypeScript', category: 'frontend' },
 	{ name: 'Nuxt', category: 'frontend' },
 	{ name: 'Tailwind CSS', category: 'frontend' },
@@ -26,7 +27,7 @@ export const skills: Skill[] = [
 export const stackGroups: SkillGroup[] = [
 	{
 		label: 'FRONTEND',
-		items: ['Svelte', 'SvelteKit', 'Nuxt', 'TypeScript', 'Tailwind CSS']
+		items: ['Svelte', 'SvelteKit', 'React', 'TypeScript', 'Tailwind CSS']
 	},
 	{
 		label: 'BACKEND',

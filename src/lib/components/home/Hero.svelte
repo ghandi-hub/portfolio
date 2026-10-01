@@ -2,10 +2,10 @@
 	import { site } from '$lib/data/site';
 
 	const metrics = [
-		{ label: 'FOCUS', value: 'API / BACKEND / INTEGRATION' },
-		{ label: 'STACK', value: 'JAVA · TYPESCRIPT · SVELTE · NODE' },
-		{ label: 'BASE', value: 'INDONESIA' },
-		{ label: 'MODE', value: 'SHIPPING' }
+		{ label: 'ROLE', value: 'BACK END DEVELOPER' },
+		{ label: 'ORG', value: 'PT. BANK NEGARA INDONESIA' },
+		{ label: 'STACK', value: 'JAVA · SPRING BOOT · SVELTE · TS' },
+		{ label: 'BASE', value: 'INDONESIA' }
 	];
 </script>
 

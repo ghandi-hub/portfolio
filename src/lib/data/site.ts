@@ -10,7 +10,7 @@ export const site = {
 	email: 'sonnyaghandi@gmail.com',
 	links: {
 		github: 'https://github.com/ghandi-hub',
-		linkedin: 'https://www.linkedin.com/in/sonnyaghandi'
+		linkedin: 'https://www.linkedin.com/in/sonnya-ghandi-a78142265'
 	}
 };
 

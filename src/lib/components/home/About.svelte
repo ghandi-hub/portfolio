@@ -40,12 +40,20 @@
 							<dd class="mt-1 font-medium">{site.role}</dd>
 						</div>
 						<div class="px-4 py-3">
+							<dt class="mono-label text-[var(--color-muted)]">CURRENT</dt>
+							<dd class="mt-1 font-medium">Back End Developer @ PT. Bank Negara Indonesia (Persero) Tbk.</dd>
+						</div>
+						<div class="px-4 py-3">
+							<dt class="mono-label text-[var(--color-muted)]">EDUCATION</dt>
+							<dd class="mt-1 font-medium">S.Kom in Informatics, STT Wastukancana (GPA 3.94 / 4.00)</dd>
+						</div>
+						<div class="px-4 py-3">
 							<dt class="mono-label text-[var(--color-muted)]">BASE</dt>
-							<dd class="mt-1 font-medium">{site.location}</dd>
+							<dd class="mt-1 font-medium">Purwakarta / Jakarta, Indonesia</dd>
 						</div>
 						<div class="px-4 py-3">
 							<dt class="mono-label text-[var(--color-muted)]">FOCUS</dt>
-							<dd class="mt-1 font-medium">API · Integration · Web Applications</dd>
+							<dd class="mt-1 font-medium">Backend Engineering · API & System Integration</dd>
 						</div>
 					</dl>
 				</div>

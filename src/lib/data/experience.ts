@@ -2,28 +2,20 @@ import type { Experience } from './types';
 
 export const experiences: Experience[] = [
 	{
-		period: '2023 — NOW',
-		title: 'Middleware Developer',
-		company: 'Enterprise Banking Integration',
+		period: '2025 — NOW',
+		title: 'Back End Developer',
+		company: 'PT. Bank Negara Indonesia (Persero) Tbk.',
 		description:
-			'Building and maintaining API and system integration layers between internal services and third-party platforms. Work spans request validation, message transformation and reliable delivery across mixed REST and SOAP interfaces.',
-		stack: ['Java', 'Node.js', 'REST', 'SOAP', 'Oracle']
+			'Engineering enterprise-grade backend services, API integrations, and middleware systems. Responsible for robust message transformation, request validation, and high-reliability data exchange across core banking platforms.',
+		stack: ['Java', 'Spring Boot', 'REST', 'SOAP', 'Oracle', 'Node.js']
 	},
 	{
-		period: '2022 — 2023',
-		title: 'Backend Developer',
-		company: 'Application Development',
+		period: '2023',
+		title: 'Fullstack Development Trainee',
+		company: 'Metrodata Academy',
 		description:
-			'Developed service endpoints and data access layers for internal applications, focusing on query correctness, structured validation and predictable API contracts.',
-		stack: ['Node.js', 'MongoDB', 'SQL', 'Docker']
-	},
-	{
-		period: '2021 — 2022',
-		title: 'Frontend Developer',
-		company: 'Web Application Delivery',
-		description:
-			'Implemented responsive interfaces against existing API contracts, with attention to component structure, layout stability and cross-device behaviour.',
-		stack: ['JavaScript', 'Vue', 'CSS']
+			'Intensive enterprise software engineering program covering OOP, MVC, Spring Boot, JPA/Hibernate, unit testing, and web security. Developed a fullstack Overtime Management web application with responsive UI and RESTful APIs.',
+		stack: ['Java', 'Spring Boot', 'React', 'REST API', 'SQL']
 	}
 ];
 
