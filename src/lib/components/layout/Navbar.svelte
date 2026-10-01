@@ -14,7 +14,7 @@
 <svelte:window onscroll={onScroll} />
 
 <a
-	href="#work"
+	href="#main"
 	class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-[var(--color-paper)] focus:border-2 focus:border-[var(--color-line)] focus:px-4 focus:py-3 mono-label"
 >
 	Skip to content

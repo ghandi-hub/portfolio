@@ -15,10 +15,10 @@ export const site = {
 };
 
 export const navItems = [
-	{ index: '01', label: 'WORK', href: '#work' },
-	{ index: '02', label: 'ENGINEERING', href: '#engineering' },
-	{ index: '03', label: 'EXPERIENCE', href: '#experience' },
-	{ index: '04', label: 'STACK', href: '#stack' },
-	{ index: '05', label: 'ABOUT', href: '#about' },
-	{ index: '06', label: 'CONTACT', href: '#contact' }
+	{ index: '01', label: 'WORK', href: '/#work' },
+	{ index: '02', label: 'ENGINEERING', href: '/#engineering' },
+	{ index: '03', label: 'EXPERIENCE', href: '/#experience' },
+	{ index: '04', label: 'STACK', href: '/#stack' },
+	{ index: '05', label: 'ABOUT', href: '/#about' },
+	{ index: '06', label: 'CONTACT', href: '/#contact' }
 ];
