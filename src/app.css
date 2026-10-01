@@ -1,0 +1,370 @@
+@import 'tailwindcss';
+
+/* ==========================================================================
+   GHANDI.DEV — Brutalist Engineering Workstation
+   Design tokens & base layer
+   ========================================================================== */
+
+@theme {
+	--color-bg: #f5f1e8;
+	--color-fg: #111111;
+	--color-accent: #ff4d00;
+	--color-accent-2: #d9ff00;
+	--color-muted: #6b6b6b;
+	--color-line: #111111;
+	--color-paper: #ffffff;
+
+	--font-display: 'Space Grotesk', 'Archivo', system-ui, sans-serif;
+	--font-body: 'Inter', 'Geist', system-ui, sans-serif;
+	--font-mono: 'JetBrains Mono', 'IBM Plex Mono', ui-monospace, monospace;
+
+	--shadow-brutal-sm: 2px 2px 0 #111;
+	--shadow-brutal: 6px 6px 0 #111;
+	--shadow-brutal-lg: 10px 10px 0 #111;
+}
+
+@layer base {
+	:root {
+		--bp-pad: 16px;
+	}
+
+	@media (min-width: 640px) {
+		:root {
+			--bp-pad: 20px;
+		}
+	}
+
+	@media (min-width: 768px) {
+		:root {
+			--bp-pad: 32px;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		:root {
+			--bp-pad: 48px;
+		}
+	}
+
+	@media (min-width: 1280px) {
+		:root {
+			--bp-pad: 64px;
+		}
+	}
+
+	html {
+		scroll-behavior: smooth;
+		-webkit-text-size-adjust: 100%;
+	}
+
+	body {
+		background-color: var(--color-bg);
+		color: var(--color-fg);
+		font-family: var(--font-body);
+		font-size: 16px;
+		line-height: 1.6;
+		overflow-x: hidden;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	::selection {
+		background: var(--color-accent);
+		color: #fff;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4 {
+		font-family: var(--font-display);
+		font-weight: 700;
+		line-height: 0.95;
+		letter-spacing: -0.02em;
+		text-wrap: balance;
+	}
+
+	:focus-visible {
+		outline: 3px solid var(--color-accent);
+		outline-offset: 3px;
+	}
+}
+
+@layer components {
+	/* --- Layout --- */
+	.shell {
+		width: 100%;
+		max-width: 1440px;
+		margin-inline: auto;
+		padding-inline: var(--bp-pad);
+	}
+
+	.shell-narrow {
+		width: 100%;
+		max-width: 1200px;
+		margin-inline: auto;
+		padding-inline: var(--bp-pad);
+	}
+
+	.rule {
+		border-top: 2px solid var(--color-line);
+	}
+
+	/* --- Typography helpers --- */
+	.mono-label {
+		font-family: var(--font-mono);
+		font-size: 11px;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+
+	@media (min-width: 768px) {
+		.mono-label {
+			font-size: 12px;
+		}
+	}
+
+	.display-hero {
+		font-family: var(--font-display);
+		font-weight: 700;
+		text-transform: uppercase;
+		line-height: 0.88;
+		letter-spacing: -0.03em;
+		font-size: clamp(3rem, 11vw, 7.5rem);
+	}
+
+	.display-section {
+		font-family: var(--font-display);
+		font-weight: 700;
+		text-transform: uppercase;
+		line-height: 0.92;
+		letter-spacing: -0.02em;
+		font-size: clamp(2rem, 6vw, 4rem);
+	}
+
+	.display-project {
+		font-family: var(--font-display);
+		font-weight: 700;
+		text-transform: uppercase;
+		line-height: 0.95;
+		letter-spacing: -0.02em;
+		font-size: clamp(1.75rem, 5vw, 4rem);
+	}
+
+	/* --- Surfaces --- */
+	.brutal-box {
+		background: var(--color-bg);
+		border: 2px solid var(--color-line);
+		border-radius: 0;
+	}
+
+	.brutal-box-strong {
+		background: var(--color-bg);
+		border: 3px solid var(--color-line);
+		border-radius: 0;
+	}
+
+	.brutal-paper {
+		background: var(--color-paper);
+		border: 2px solid var(--color-line);
+		border-radius: 0;
+	}
+
+	.shadow-brutal-sm {
+		box-shadow: var(--shadow-brutal-sm);
+	}
+
+	.shadow-brutal {
+		box-shadow: var(--shadow-brutal);
+	}
+
+	.shadow-brutal-lg {
+		box-shadow: var(--shadow-brutal-lg);
+	}
+
+	/* --- Button: physical control --- */
+	.btn-brutal {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.5rem;
+		min-height: 44px;
+		min-width: 44px;
+		padding: 0.75rem 1.25rem;
+		border: 2px solid var(--color-line);
+		border-radius: 0;
+		background: var(--color-paper);
+		color: var(--color-fg);
+		font-family: var(--font-mono);
+		font-size: 12px;
+		font-weight: 700;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		text-decoration: none;
+		box-shadow: var(--shadow-brutal);
+		transition:
+			transform 140ms ease,
+			box-shadow 140ms ease,
+			background-color 140ms ease,
+			color 140ms ease;
+		cursor: pointer;
+	}
+
+	.btn-brutal:hover {
+		background: var(--color-fg);
+		color: var(--color-bg);
+	}
+
+	.btn-brutal:active {
+		transform: translate(4px, 4px);
+		box-shadow: 2px 2px 0 #111;
+	}
+
+	.btn-brutal-accent {
+		background: var(--color-accent);
+		color: #fff;
+	}
+
+	.btn-brutal-accent:hover {
+		background: var(--color-fg);
+		color: var(--color-accent-2);
+	}
+
+	.btn-brutal-ghost {
+		box-shadow: none;
+		background: transparent;
+	}
+
+	.btn-brutal-ghost:hover {
+		background: var(--color-fg);
+		color: var(--color-bg);
+	}
+
+	/* --- Tag / Chip --- */
+	.tag-brutal {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.35rem;
+		border: 2px solid var(--color-line);
+		border-radius: 0;
+		background: var(--color-paper);
+		padding: 0.3rem 0.6rem;
+		font-family: var(--font-mono);
+		font-size: 11px;
+		font-weight: 700;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		white-space: nowrap;
+	}
+
+	.tag-brutal-accent {
+		background: var(--color-accent-2);
+	}
+
+	/* --- Link arrow --- */
+	.link-arrow {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.4rem;
+		font-family: var(--font-mono);
+		font-size: 12px;
+		font-weight: 700;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: var(--color-fg);
+		border-bottom: 2px solid var(--color-line);
+		padding-bottom: 2px;
+		transition: gap 140ms ease, color 140ms ease;
+	}
+
+	.link-arrow:hover {
+		gap: 0.75rem;
+		color: var(--color-accent);
+	}
+
+	/* --- Status dot --- */
+	.status-dot {
+		display: inline-block;
+		width: 8px;
+		height: 8px;
+		background: #16a34a;
+		border-radius: 9999px;
+		animation: pulse-dot 2s ease-in-out infinite;
+	}
+
+	@keyframes pulse-dot {
+		0%,
+		100% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0.35;
+		}
+	}
+
+	/* --- Marquee --- */
+	.marquee-track {
+		display: flex;
+		width: max-content;
+		animation: marquee 28s linear infinite;
+	}
+
+	@keyframes marquee {
+		from {
+			transform: translateX(0);
+		}
+		to {
+			transform: translateX(-50%);
+		}
+	}
+
+	/* --- Reveal on scroll --- */
+	.reveal {
+		opacity: 1;
+	}
+
+	@media (prefers-reduced-motion: no-preference) {
+		.reveal {
+			opacity: 0;
+			transform: translateY(18px);
+			transition:
+				opacity 420ms ease,
+				transform 420ms ease;
+		}
+
+		.reveal.is-visible {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+}
+
+/* --- Reduced motion: kill decorative motion --- */
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.001ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.001ms !important;
+		scroll-behavior: auto !important;
+	}
+
+	.marquee-track {
+		animation: none;
+	}
+
+	.reveal {
+		opacity: 1;
+		transform: none;
+	}
+
+	.status-dot {
+		animation: none;
+	}
+}
